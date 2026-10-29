@@ -1,1 +1,260 @@
 
+# Visão do Produto — Sistema de Apoio à Avaliação de Risco de Crédito
+
+## 1. Identificação do documento
+
+| Campo | Descrição |
+|---|---|
+| Identificador | DOC-DISC-001 |
+| Nome | Visão do Produto |
+| Versão | 0.1.0 — Proposta inicial |
+| Status | Em revisão |
+| Projeto | LLM-Driven ML Application Engineering |
+| Contexto | Mestrado profissional em Inteligência Computacional Aplicada às Decisões Financeiras |
+
+## 2. Contexto e motivação
+
+O projeto propõe o desenvolvimento de uma aplicação web baseada em Machine Learning para apoiar a análise de um problema relacionado à tomada de decisão financeira.
+
+A hipótese inicial consiste em desenvolver um sistema de apoio à avaliação de risco de crédito, utilizando uma base de dados pública disponibilizada no Kaggle.
+
+A motivação é construir um artefato tecnológico que demonstre a aplicação prática de técnicas de inteligência computacional a um problema de negócio, integrando modelagem preditiva, engenharia de software e apresentação de resultados para o usuário.
+
+O projeto também investiga o desenvolvimento de software assistido por Modelos de Linguagem de Grande Escala (LLMs). Para isso, as decisões, especificações, instruções, prompts, testes e demais artefatos relevantes serão documentados e versionados.
+
+A proposta contempla, portanto, duas dimensões complementares: o desenvolvimento de uma aplicação funcional e a construção de um processo de engenharia documentado que possa ser reproduzido e avaliado por terceiros.
+
+## 3. Problema de negócio
+
+A avaliação de risco de crédito envolve a análise de informações relacionadas a um solicitante e a estimativa da possibilidade de inadimplência.
+
+A hipótese de negócio a investigar é se um modelo de Machine Learning, utilizando dados históricos adequados, pode produzir estimativas úteis para apoiar a análise de risco e apresentá-las de forma compreensível ao usuário.
+
+O problema definitivo dependerá da base de dados selecionada, da definição de sua variável-alvo e da verificação de que as informações disponíveis são adequadas ao cenário de utilização pretendido.
+
+O sistema não deverá presumir que uma previsão estatística, isoladamente, seja suficiente para fundamentar uma decisão de concessão ou negação de crédito.
+
+## 4. Visão do produto
+
+Desenvolver um protótipo de aplicação web que permita utilizar um modelo de Machine Learning para estimar e apresentar informações relacionadas ao risco de crédito, disponibilizando resultados compreensíveis, verificáveis e úteis à análise do usuário.
+
+O produto deverá ser concebido com critérios de qualidade de software, modularidade, testabilidade, segurança, rastreabilidade e possibilidade de evolução.
+
+A aplicação deverá demonstrar mais do que a execução de um algoritmo: deverá integrar o modelo a um sistema utilizável, com entradas validadas, resultados apresentados adequadamente, documentação e testes.
+
+A evolução comercial constitui uma direção de desenvolvimento. A prontidão para produção dependerá de validações e controles adicionais, conforme os requisitos do contexto real de utilização.
+
+## 5. Usuários e necessidades
+
+### 5.1. Usuário principal hipotético
+
+**Analista ou profissional responsável pela análise de crédito.**
+
+Necessidades a investigar:
+
+- Consultar estimativas de risco produzidas pelo modelo.
+- Compreender os resultados apresentados e suas limitações.
+- Investigar como diferentes características de entrada se relacionam com as previsões.
+- Utilizar informações consistentes para apoiar a análise de solicitações de crédito.
+
+Esse perfil é uma hipótese inicial, ainda não validada com usuários reais.
+
+### 5.2. Usuários secundários potenciais
+
+- Profissionais de pequenas empresas que realizam análises de risco financeiro.
+- Desenvolvedores responsáveis pela manutenção e evolução da aplicação.
+- Pesquisadores e estudantes interessados na avaliação de modelos de classificação.
+- Usuários que desejem reproduzir o processo de desenvolvimento documentado.
+
+A definição dos públicos prioritários deverá ser revista após a seleção do problema e a análise da base de dados.
+
+## 6. Proposta de valor
+
+A proposta de valor consiste em reunir modelagem preditiva e engenharia de software em uma aplicação que possa ser demonstrada, testada, avaliada e evoluída.
+
+Os benefícios esperados incluem:
+
+- Disponibilizar previsões por meio de uma interface acessível.
+- Apresentar métricas e limitações que permitam avaliar a qualidade do modelo.
+- Facilitar a interpretação dos resultados e a exploração de cenários.
+- Organizar os componentes de maneira que possam ser testados e mantidos.
+- Demonstrar um processo de desenvolvimento documentado, passível de reprodução.
+- Criar uma base técnica para futuras investigações e melhorias do produto.
+
+Esses benefícios constituem objetivos do projeto, não resultados já comprovados.
+
+## 7. Objetivos do produto
+
+### 7.1. Objetivo geral
+
+Construir um protótipo funcional de apoio à avaliação de risco de crédito, fundamentado em Machine Learning e desenvolvido segundo práticas de engenharia de software que favoreçam qualidade, rastreabilidade, testabilidade e evolução.
+
+### 7.2. Objetivos específicos
+
+1. Identificar e selecionar uma base de dados adequada ao problema.
+2. Investigar e comparar modelos de classificação apropriados.
+3. Avaliar o desempenho dos modelos por meio de procedimentos de validação adequados.
+4. Disponibilizar as funcionalidades do modelo em uma aplicação web.
+5. Apresentar resultados e limitações de maneira compreensível.
+6. Implementar testes para verificar o comportamento dos componentes.
+7. Documentar a arquitetura, as interfaces e as decisões técnicas.
+8. Estabelecer condições para manutenção e evolução do sistema.
+9. Avaliar a conformidade do produto com os requisitos definidos nas etapas posteriores.
+
+## 8. Escopo preliminar
+
+### 8.1. Incluído no escopo
+
+- Pesquisa e seleção de uma base de dados pública.
+- Análise exploratória e preparação dos dados.
+- Treinamento e avaliação de modelos de Machine Learning.
+- Seleção de um modelo para integração à aplicação.
+- Desenvolvimento de uma interface web para utilização do modelo.
+- Disponibilização de uma API, caso essa arquitetura seja confirmada.
+- Apresentação de previsões e métricas de avaliação.
+- Testes automatizados e documentação de execução.
+- Documentação do processo de desenvolvimento assistido por LLM.
+- Publicação do código e dos artefatos apropriados no GitHub.
+
+### 8.2. Fora do escopo inicial
+
+- Concessão ou negação automática de crédito em operações reais.
+- Integração obrigatória com sistemas bancários ou bureaus de crédito.
+- Utilização de dados pessoais reais de clientes sem autorização e controles apropriados.
+- Implantação comercial em produção.
+- Garantia de desempenho em populações diferentes daquela representada pelos dados disponíveis.
+- Construção de uma plataforma financeira completa.
+
+Esses limites poderão ser revistos se houver justificativa, disponibilidade de recursos e aprovação explícita de mudanças no escopo.
+
+## 9. Capacidades esperadas
+
+As capacidades a seguir são propostas iniciais e deverão ser detalhadas nos requisitos funcionais.
+
+### 9.1. Entrada e validação de dados
+
+Permitir que o usuário informe os atributos necessários à análise, com validação de campos obrigatórios, tipos e intervalos aplicáveis.
+
+### 9.2. Inferência
+
+Receber os dados válidos e produzir uma previsão utilizando o modelo treinado e o mesmo pipeline de pré-processamento utilizado em seu desenvolvimento.
+
+### 9.3. Apresentação dos resultados
+
+Exibir a classificação e, quando metodologicamente apropriado, a probabilidade estimada da classe de interesse.
+
+### 9.4. Interpretabilidade
+
+Disponibilizar recursos adequados à investigação das previsões, desde que a técnica selecionada seja compatível com o modelo e os dados.
+
+### 9.5. Avaliação do modelo
+
+Apresentar métricas calculadas sobre conjuntos de avaliação apropriados, distinguindo resultados experimentais de previsões realizadas durante a utilização da aplicação.
+
+### 9.6. Simulação de cenários
+
+Possibilitar alterações controladas nas entradas e a observação das mudanças nas previsões, sem sugerir que uma alteração isolada represente necessariamente uma relação causal.
+
+### 9.7. Rastreabilidade
+
+Registrar as versões relevantes do modelo e de seus componentes, de modo que as previsões possam ser associadas à configuração utilizada.
+
+A implementação definitiva dessas capacidades dependerá dos requisitos, da arquitetura e das características da base selecionada.
+
+## 10. Critérios iniciais de sucesso
+
+O sucesso do produto deverá ser avaliado por evidências verificáveis.
+
+| Dimensão | Critério inicial |
+|---|---|
+| Dados | Base selecionada com documentação, variável-alvo identificada e limitações registradas. |
+| Modelo | Avaliação realizada com protocolo definido e métricas apropriadas ao problema. |
+| Integridade experimental | Separação adequada entre treinamento, validação e teste, com prevenção de vazamento de dados. |
+| Funcionalidade | Fluxos principais da aplicação executados conforme os requisitos aprovados. |
+| Qualidade técnica | Testes automatizados, validação de entradas e tratamento dos erros previstos. |
+| Interpretabilidade | Resultados explicativos documentados e compatíveis com as técnicas utilizadas. |
+| Manutenibilidade | Componentes e responsabilidades documentados, com instruções para modificar e testar o sistema. |
+| Reprodutibilidade | Terceiros conseguem instalar e executar o projeto seguindo as instruções publicadas. |
+| Evolução comercial | Lacunas entre o protótipo e uma possível implantação real identificadas e documentadas. |
+
+Os limiares quantitativos de desempenho, os critérios de aceitação funcionais e os níveis de cobertura de testes serão definidos em documentos posteriores, com justificativas adequadas.
+
+## 11. Restrições e premissas
+
+### 11.1. Restrições
+
+- O projeto será desenvolvido no contexto de uma atividade acadêmica com prazo e recursos limitados.
+- A base de dados deverá ser obtida de uma fonte pública compatível com o uso pretendido.
+- A solução deverá ser suficientemente simples para permitir implementação, avaliação e demonstração dentro do escopo acadêmico.
+- Os resultados do modelo dependerão da qualidade, da representatividade e das limitações dos dados disponíveis.
+
+### 11.2. Premissas
+
+- A avaliação de risco de crédito constitui a hipótese inicial de problema.
+- Será possível identificar uma base adequada para investigar o problema.
+- O desenvolvimento utilizará inicialmente o Antigravity como ambiente assistido por LLM.
+- A documentação versionada deverá permitir tentativas independentes de reprodução.
+- A arquitetura definitiva será escolhida depois da formalização dos requisitos e das restrições técnicas.
+
+## 12. Riscos e questões em aberto
+
+### 12.1. Riscos preliminares
+
+- A base selecionada pode não representar adequadamente o cenário de negócio pretendido.
+- O desempenho medido experimentalmente pode não se manter em dados futuros ou em outras populações.
+- O conjunto de dados pode apresentar vieses, variáveis inadequadas ou vazamento de informação.
+- O LLM pode produzir código incorreto, inseguro ou incompatível com as especificações.
+- A geração de explicações pode resultar em interpretações enganosas sobre o funcionamento do modelo.
+- A documentação pode ser insuficiente para reproduzir o resultado em outro ambiente.
+- A qualidade do protótipo pode não atender às exigências de uma implantação comercial.
+
+### 12.2. Questões em aberto
+
+1. Qual base de dados do Kaggle será selecionada?
+2. Qual será a definição operacional do risco de crédito investigado?
+3. Quais algoritmos serão comparados?
+4. Quais métricas e limiares de aceitação serão adotados?
+5. Qual perfil de usuário será priorizado?
+6. Qual arquitetura técnica atenderá aos requisitos com menor complexidade desnecessária?
+7. Quais mecanismos de interpretabilidade serão adequados?
+8. Como serão registradas e comparadas as execuções realizadas por diferentes usuários, LLMs e ambientes?
+9. Quais controles adicionais seriam necessários para uma futura implantação comercial?
+
+Essas questões deverão ser respondidas nos documentos específicos das etapas posteriores.
+
+## 13. Relação com o experimento de desenvolvimento assistido por LLM
+
+O projeto possui um segundo objetivo: investigar a capacidade de um processo de desenvolvimento documentado de orientar a construção de uma aplicação de qualidade.
+
+O pipeline deverá registrar os prompts, os artefatos de entrada e saída, as decisões relevantes, os testes, as correções e as intervenções humanas.
+
+A avaliação do processo deverá distinguir:
+
+- Qualidade da aplicação resultante.
+- Conformidade com as especificações.
+- Consistência entre execuções.
+- Facilidade de reprodução por outros usuários.
+- Influência do LLM e do ambiente utilizado.
+
+A reprodução não exige código-fonte idêntico. O critério principal será a obtenção de um resultado funcionalmente equivalente, que atenda aos requisitos e critérios de aceitação definidos.
+
+A comparação deverá reconhecer que diferenças entre modelos, ambientes, configurações e intervenções humanas podem afetar os resultados.
+
+## 14. Condições para evolução comercial
+
+O protótipo deverá ser construído considerando a possibilidade de evolução, mas sua utilização em operações reais dependerá de uma avaliação específica de prontidão.
+
+Entre os aspectos a investigar antes de uma implantação comercial estão:
+
+- Adequação dos dados ao contexto real de uso.
+- Validação do desempenho em dados representativos e, quando necessário, temporalmente separados.
+- Avaliação de vieses, impactos e consequências dos erros.
+- Segurança, privacidade e controles de acesso.
+- Monitoramento de desempenho e mudanças nas características dos dados.
+- Rastreabilidade das previsões e governança das versões do modelo.
+- Supervisão humana e definição das responsabilidades pelo uso dos resultados.
+- Requisitos legais, regulatórios e operacionais aplicáveis.
+- Disponibilidade, manutenção, recuperação de falhas e suporte.
+
+O projeto deverá documentar as lacunas identificadas, permitindo que a evolução comercial seja planejada com base em evidências, e não apenas na conclusão técnica do protótipo.
+
